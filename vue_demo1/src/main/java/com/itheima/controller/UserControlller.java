@@ -25,6 +25,7 @@ public class UserControlller {
     }
     @RequestMapping("/findById.do")
     public User findById(Integer id){
+        System.out.println("找到了");
         return userService.findById(id);
     }
     @RequestMapping("/updateUser.do")
